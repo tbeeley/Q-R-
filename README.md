@@ -1,4 +1,4 @@
 Q-R-
 ====
 
-Management system
+Management system for quarterly investment reports. 
