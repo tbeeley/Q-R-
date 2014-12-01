@@ -12,7 +12,10 @@ class Quarter
 
 	def biggest_positions(n)
 		common_stock_positions.sort_by {|k, v| - v}.first n
-		#Change this to 5 later on, sort array into
+	end
+
+	def new_stocks(previous_quarter)
+		common_stock_positions.reject {|k, _| previous_quarter.common_stock_positions.include? k }
 	end
 
 end

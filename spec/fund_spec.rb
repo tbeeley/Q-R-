@@ -30,9 +30,10 @@ describe Fund do
 			expect(fund.compare_quarters).to eq "2nd Quarter loss, 3rd Quarter growth, 4th Quarter loss"
 		end
 
-		# it 'its new stocks each quarter' do
-		# 	expect(quarter.)
-		# end
+		#Keep for the moment. But maybe remove
+		it 'its new stocks each quarter' do
+			expect(fund.new_positions(quarter1, quarter2)).to eq {:ASSET_ACCEP_CAP_CORP=>86, :APPLE_INC=>1215}
+		end
 
 	end
 
