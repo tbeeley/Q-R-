@@ -12,7 +12,6 @@ class Fund
 	end
 
 	def comparison(x, y)
-		#Needs work
 		x > y ? 'growth' : 'loss'
 	end
 
