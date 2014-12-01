@@ -1,9 +1,9 @@
 class Quarter
 
-	def initialize
-		@positions = {}
+	def initialize(common_stock_positions)
+		@common_stock_positions = common_stock_positions
 	end
 
-	attr_accessor :positions
+	attr_accessor :common_stock_positions
 
 end
