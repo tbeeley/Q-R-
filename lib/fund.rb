@@ -6,4 +6,10 @@ class Fund
 
 	attr_accessor :quarters
 
+	def add(quarter)
+		if quarters.count < 4
+			@quarters << quarter
+		end
+	end
+
 end

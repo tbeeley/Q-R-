@@ -12,7 +12,8 @@ describe Quarter do
 		end
 
 		it 'should have a time period' do
-			expect(quarter.ending).to eq "3/31/12"
+			expect(quarter.date).to eq "3/31/12"
+			#Quarter should have a date attached. This would be useful for the Fund.
 		end
 
 	end
