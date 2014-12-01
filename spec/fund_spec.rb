@@ -26,6 +26,10 @@ describe Fund do
 			expect(fund.show_performance).to eq [1413, 2405, 1174, 1960]
 		end
 
+		it 'should know whether it grew or fell each quarter' do
+			expect(fund.compare_quarters).to eq "2nd Quarter loss, 3rd Quarter growth, 4th Quarter loss"
+		end
+
 	end
 
 end
