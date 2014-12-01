@@ -19,6 +19,10 @@ describe Quarter do
 			expect(quarter.total_value).to eq 1413
 		end
 
+		it 'its five largest holdings' do
+			expect(quarter.biggest_positions). to eq [[:AARONS_INC, 636]]
+		end
+
 	end
 
 end
