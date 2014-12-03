@@ -7,7 +7,6 @@ class Fund
 	attr_accessor :quarters
 
 	def show_performance
-		#Needs work
 		quarters.map {|quarter| quarter.total_value}
 	end
 
@@ -16,7 +15,6 @@ class Fund
 	end
 
 	def compare_quarters
-		#Put in output class
 		"2nd Quarter #{comparison(quarters[0].total_value, quarters[1].total_value)}, 3rd Quarter #{comparison(quarters[1].total_value, quarters[2].total_value)}, 4th Quarter #{comparison(quarters[2].total_value, quarters[3].total_value)}"
 	end
 

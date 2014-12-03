@@ -1,8 +1,8 @@
-require 'Convert'
+require 'formatted_data'
 
-describe Convert do
+describe FormattedData do
 
-	let(:march_data) { Convert.new('march_small.txt')}
+	let(:march_data) { FormattedData.new('march_small.txt')}
 
 	context 'when initialized' do
 
@@ -16,6 +16,7 @@ describe Convert do
 
 		it 'should convert it to a string' do
 			expect(march_data.contents).to be_an_instance_of String
+			puts march_data.contents
 		end
 
 	end
