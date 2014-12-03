@@ -13,10 +13,9 @@ Management system for quarterly investment reports. Ideal product would read SEC
 
 ##Still to do:
 
-	* Project reads txt files but doesn't yet convert them to the Hash format required for analysis. 
-    * With more time, I'd have loved to write a game-engine that made the project work in the command-line.
+Project reads txt files but doesn't yet convert them to the Hash format required for analysis. With more time, I'd have loved to write a game-engine that made the project work in the command-line.
 
- #How to run the tests
+##How to run the tests
 
 	* git clone https://github.com/tbeeley/Q-R-
 	* cd Q-R-

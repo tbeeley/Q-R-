@@ -15,7 +15,7 @@ class FormattedData
 	end
 
 	def convert_contents_to_csp
-		#This method would take the new string from the txt file. It would convert this string into the Hash as seen in the Quarter class for analysis.
+		#This method (along with others) would take the new string from the txt file. It would convert this string into the Hash as seen in the Quarter class for analysis.
 	end
 
 end
