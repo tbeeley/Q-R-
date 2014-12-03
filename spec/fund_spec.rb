@@ -23,7 +23,7 @@ describe Fund do
 	context 'should know' do
 
 		it 'its common stock positions for each quarter' do
-			expect(fund.show_performance).to eq [1413, 2405, 1174, 1960]
+			expect(fund.performance).to eq [1413, 2405, 1174, 1960]
 		end
 
 		it 'whether it grew or fell each quarter' do

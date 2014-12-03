@@ -25,6 +25,10 @@ describe Quarter do
 			expect(quarter1.biggest_positions(1)). to eq [[:AARONS_INC, 636]]
 		end
 
+		it 'how to make a comparison' do
+			expect(quarter2.comparison(quarter2)).to eq 'loss'
+		end
+
 		it 'its new stocks' do
 			expect(quarter2.new_stocks(quarter1)).to eq ({:ASSET_ACCEP_CAP_CORP => 86, :APPLE_INC => 1215})
 		end

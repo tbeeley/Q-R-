@@ -10,16 +10,16 @@ class Quarter
 		common_stock_positions.values.inject(:+)
 	end
 
-	def biggest_positions(n)
-		common_stock_positions.sort_by {|k, v| - v}.first n
+	def biggest_positions(number)
+		common_stock_positions.sort_by {|company, value| - value}.first number
 	end
 
-	def comparison1(previous_quarter)
+	def comparison(previous_quarter)
 		total_value > previous_quarter.total_value ? 'growth' : 'loss'
 	end
 
 	def new_stocks(previous_quarter)
-		common_stock_positions.reject {|k, _| previous_quarter.common_stock_positions.include? k }
+		common_stock_positions.reject {|company, _| previous_quarter.common_stock_positions.include? company }
 	end
 
 end
