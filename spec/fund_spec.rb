@@ -27,7 +27,7 @@ describe Fund do
 		end
 
 		it 'whether it grew or fell each quarter' do
-			expect(fund.compare_quarters).to eq "2nd Quarter loss, 3rd Quarter growth, 4th Quarter loss"
+			expect(fund.compare_quarters).to eq "2nd Quarter growth, 3rd Quarter loss, 4th Quarter growth"
 		end
 
 	end

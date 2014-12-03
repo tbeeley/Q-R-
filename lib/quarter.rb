@@ -14,6 +14,10 @@ class Quarter
 		common_stock_positions.sort_by {|k, v| - v}.first n
 	end
 
+	def comparison1(previous_quarter)
+		total_value > previous_quarter.total_value ? 'growth' : 'loss'
+	end
+
 	def new_stocks(previous_quarter)
 		common_stock_positions.reject {|k, _| previous_quarter.common_stock_positions.include? k }
 	end

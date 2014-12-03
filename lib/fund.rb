@@ -1,7 +1,7 @@
 class Fund
 
-	def initialize(quarter1, quarter2, quarter3, quarter4)
-		@quarters = [quarter1, quarter2, quarter3, quarter4]
+	def initialize(first_q, second_q, third_q, fourth_q)
+		@quarters = [first_q, second_q, third_q, fourth_q]
 	end
 
 	attr_accessor :quarters
@@ -10,12 +10,8 @@ class Fund
 		quarters.map {|quarter| quarter.total_value}
 	end
 
-	def comparison(x, y)
-		x > y ? 'growth' : 'loss'
-	end
-
 	def compare_quarters
-		"2nd Quarter #{comparison(quarters[0].total_value, quarters[1].total_value)}, 3rd Quarter #{comparison(quarters[1].total_value, quarters[2].total_value)}, 4th Quarter #{comparison(quarters[2].total_value, quarters[3].total_value)}"
+		"2nd Quarter #{quarters[1].comparison1(quarters[0])}, 3rd Quarter #{quarters[2].comparison1(quarters[1])}, 4th Quarter #{quarters[3].comparison1(quarters[2])}"
 	end
 
 end
