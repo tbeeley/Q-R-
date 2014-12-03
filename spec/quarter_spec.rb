@@ -26,9 +26,7 @@ describe Quarter do
 		end
 
 		it 'its new stocks' do
-			# Come back to, it's correct. But can't get RSpec to accept hash.
-			# expect(quarter2.new_stocks(quarter1)).to eq {:ASSET_ACCEP_CAP_CORP => 86, :APPLE_INC => 1215}
-			expect(quarter2.new_stocks(quarter1)).to be_an_instance_of Hash
+			expect(quarter2.new_stocks(quarter1)).to eq ({:ASSET_ACCEP_CAP_CORP => 86, :APPLE_INC => 1215})
 		end
 
 	end
